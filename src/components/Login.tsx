@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "./Button";
 import { Input } from "./form/Input";
 import { Merriweather } from "next/font/google"; 
@@ -8,9 +7,9 @@ const merri = Merriweather({ weight: ['400', '700'], subsets: ['latin'], })
 
 export function Login() {
 	return (
-		<div className="grow shrink flex flex-col gap-40 justify-center items-center px-8">
-			<form className="flex flex-col w-full sm:w-[350px]">
-				<div className={`my-5 ${merri.className}`}>
+		<div className="grow shrink flex flex-col justify-around items-center px-8">
+			<form className="flex flex-col w-full gap-2 sm:w-[350px]">
+				<div className={`my-3 ${merri.className}`}>
 					<h1 className="font-normal text-base">Bem vindo de volta</h1>
 					<h2 className="font-bold text-2xl">Faça login na sua conta</h2>
 				</div>
