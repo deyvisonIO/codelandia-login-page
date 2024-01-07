@@ -1,4 +1,9 @@
-export function Input({ title, type }) {
+interface InputProps {
+	title: string;
+	type: string;
+}
+
+export function Input({ title, type }: InputProps) {
 	return (
 		<div className="flex flex-col gap-3 w-full">
 			<label className="text-base font-normal">{title}</label>
